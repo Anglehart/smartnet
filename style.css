@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #181818;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 10px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+.controlBlock {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.controlButton {
+  background: #FFF;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  width: 167px;
+  border-radius: 21px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 10px 5px;
+}
+
+.controlActive, .controlBlock div:hover {
+  background: linear-gradient(to bottom, #b1fdf8, #5b9bac) !important;
+}
+.page {
+  color: #fff;
+}
+.disable {
+  display: none;
+}
+#aboutSmartPage .text {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+#aboutSmartPage .text div {
+  width: calc(50% - 15px);
+  text-align: justify;
+  min-width: 280px;
+  margin: 10px 0;
+}
+#aboutSmartPage .aboutBlocks {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+#aboutSmartPage .aboutBlocks div {
+  width: calc(25% - 20px);
+  min-width: 280px;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin: 10px 5px;
+}
+#aboutSmartPage .aboutBlocks div p {
+  min-height: 70px;
+}
+#aboutSmartPage .steps-inner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 288px;
+}
+#aboutSmartPage .step {
+  width: 225px;
+  padding-top: 120px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-weight: 500;
+  font-size: 17px;
+  margin: 20px 0;
+  text-align: center;
+}
+#aboutSmartPage .step p {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+}
+#aboutSmartPage .arrow {
+  background-image: url(./assets/5.png);
+  width: 50px;
+  background-position: center 55px;
+  background-repeat: no-repeat;
+}
+#aboutSmartPage .step:nth-child(1) {
+    background-image: url(./assets/6.png);
+}
+#aboutSmartPage .step:nth-child(3) {
+    background-image: url(./assets/7.png);
+}
+#aboutSmartPage .step:nth-child(5) {
+    background-image: url(./assets/8.png);
+}
+#aboutSmartPage .step:nth-child(7) {
+    background-image: url(./assets/9.png);
+}
+#aboutSmartPage {
+  margin: 30px 0;
+}
+
+#aboutSmartPage h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: normal;
+}
+#aboutSmartPage p {
+  text-align: center;
+  font-size: 20px;
+}
+@media (max-width: 1140px) {
+  .arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  #aboutSmartPage .text, {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 395px) {
+
+}
