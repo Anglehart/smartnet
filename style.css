@@ -122,6 +122,56 @@ h1 {
   text-align: center;
   font-size: 20px;
 }
+#spheresPage .sphereBlock {
+  color: #000;
+  background-color: #fff;
+  padding: 10px 30px 30px 365px;
+  border-radius: 10px;
+  text-align: justify;
+  margin: 20px 0;
+  background-repeat: no-repeat;
+  background-position: 50px top;
+  position: relative;
+  max-height: 220px;
+  height: auto;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#spheresPage .sphereBlock::after {
+ content: ''; /* Выводим элемент */
+ position: absolute; /* Абсолютное позиционирование */
+ right: 0; bottom: 0; /* Положение элемента */
+ width: 100%; /* Ширина градиента*/
+ height: 40px; /* Высота родителя */
+ background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), #fff 100%);
+ border-radius: 10px;
+}
+#spheresPage .sphereBlock:nth-child(1) {
+  background-image: url(./assets/sphere1.png);
+}
+#spheresPage .sphereBlock:nth-child(2) {
+  background-image: url(./assets/sphere2.png);
+}
+#spheresPage .sphereBlock:nth-child(3) {
+  background-image: url(./assets/sphere3.png);
+}
+#spheresPage .sphereBlock:nth-child(4) {
+  background-image: url(./assets/sphere4.png);
+}
+#spheresPage .sphereBlock:nth-child(5) {
+  background-image: url(./assets/sphere5.png);
+}
+#spheresPage .sphereBlock:nth-child(6) {
+  background-image: url(./assets/sphere6.png);
+}
+
+#spheresPage .sphereBlock h3 {
+  font-size: 25px;
+  font-weight: normal;
+}
+.fullSphere {
+  max-height: 750px !important;
+}
 @media (max-width: 1140px) {
   .arrow {
     display: none;

@@ -12,4 +12,12 @@ function initFunction() {
     })
   });
 
+  document.querySelectorAll('.sphereBlock').forEach((item, i) => {
+    item.addEventListener('click', () => {
+      document.querySelectorAll('.sphereBlock').forEach((item) => {item.classList.remove('fullSphere')})
+      event.currentTarget.classList.add('fullSphere');
+    })
+  });
+
+
 }
