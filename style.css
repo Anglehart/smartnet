@@ -136,6 +136,7 @@ h1 {
   height: auto;
   cursor: pointer;
   transition: 0.5s;
+  overflow: hidden;
 }
 #spheresPage .sphereBlock::after {
  content: ''; /* Выводим элемент */
@@ -170,16 +171,201 @@ h1 {
   font-weight: normal;
 }
 .fullSphere {
-  max-height: 750px !important;
+  max-height: 2000px !important;
 }
+
+.tariffBlock {
+  background-color: #fff;
+  color: #000;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.tariffBlock h3 {
+  font-size: 25px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+}
+.tariffBlock p {
+  text-align: center;
+}
+.tariffBlock-inner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.price {
+  color: #fff;
+  width: 207px;
+  padding-top: 176px;
+  text-align: center;
+  font-size: 23px;
+  padding-bottom: 13px;
+}
+.price-wrapper, .price-wrapper2, .price-wrapper3 {
+  background-color: #000;
+  background-repeat: no-repeat;
+  margin: 20px 10px;
+}
+.unlim-1day {
+  background-image: url(./assets/t1.jpg);
+}
+.unlim-1mon {
+  background-image: url(./assets/t2.jpg);
+}
+.unlim-3mon {
+  background-image: url(./assets/t3.jpg);
+}
+.unlim-6mon {
+  background-image: url(./assets/t4.jpg);
+}
+.unlim-12mon {
+  background-image: url(./assets/t5.jpg);
+}
+.lim-7hours {
+  background-image: url(./assets/t6.jpg);
+}
+.lim-30hours {
+  background-image: url(./assets/t7.jpg);
+}
+.rinex-3mon {
+  background-image: url(./assets/t8.jpg);
+}
+.rinex-6mon {
+  background-image: url(./assets/t9.jpg);
+}
+.rinex-12mon {
+  background-image: url(./assets/t10.jpg);
+}
+.tariff-ps {
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.limitBlock {
+  justify-content: center;
+}
+.callback-button {
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  padding: 15px;
+  border-top: 1px solid #2e2e2e;
+  cursor: pointer;
+}
+.price-wrapper2 .callback-button:hover {
+  background: linear-gradient(to bottom, #c7f064, #769430);
+  color: #000;
+}
+.price-wrapper3 .callback-button:hover {
+  background: linear-gradient(to bottom, #fed74f, #ddb220);
+  color: #000;
+}
+.callback-button:hover {
+  background: linear-gradient(to bottom, #babbff, #7e80d5);
+  color: #000;
+}
+
+#connectPage .connectBlock {
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: justify;
+  margin: 20px 0;
+  background-repeat: no-repeat;
+  background-position: 50px top;
+  position: relative;
+  max-height: 220px;
+  height: auto;
+  cursor: pointer;
+  transition: 0.5s;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+#connectPage .connectBlock::after {
+ content: ''; /* Выводим элемент */
+ position: absolute; /* Абсолютное позиционирование */
+ right: 0; bottom: 0; /* Положение элемента */
+ width: 100%; /* Ширина градиента*/
+ height: 30px; /* Высота родителя */
+ background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), #fff 100%);
+ border-radius: 10px;
+}
+.openTab {
+  background: url(./assets/minus.png) right 15px center, linear-gradient(to bottom, #b1fdf8, #5b9bac) !important;
+  background-repeat: no-repeat !important;
+}
+.fullConnect {
+  max-height: 1700px !important;
+}
+#connectPage .connectBlock h3 {
+  margin: 0;
+  padding: 15px 50px 15px 30px;
+  font-size: 22px;
+  background: url(./assets/plus.png) right 15px center, linear-gradient(to bottom, #b1fdf8, #5b9bac);
+  background-repeat: no-repeat;
+}
+#connectPage .connectBlock h4,  #connectPage .connectBlock p{
+  padding: 0 30px;
+}
+#connectPage .connectBlock span {
+  font-weight: normal;
+  font-size: 16px;
+}
+.connectTable {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.connectTable table td{
+  padding: 4px;
+}
+.connectTable table tr td:nth-child(odd), .connectTable table th {
+  text-align: center;
+}
+.connectTable table tr:nth-child(odd) td{
+  background: #e6eff6
+}
+#zonePage iframe {
+  overflow: hidden;
+}
+
 @media (max-width: 1140px) {
   .arrow {
     display: none;
   }
 }
 
+@media (max-width: 975px) {
+  .connectTable table {
+    width: 100%
+  }
+  .connectTable table tr td:nth-child(1) {
+    width: 20%
+  }
+  .connectTable table tr td:nth-child(3) {
+    width: 20%
+  }
+  .connectTable table:nth-child(2) th {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  #spheresPage .sphereBlock {
+    padding: 250px 20px 20px 20px;
+    background-position: center top;
+  }
+  .tariffBlock {
+    padding: 20px;
+  }
+}
+
 @media (max-width: 560px) {
-  #aboutSmartPage .text, {
+  #aboutSmartPage .text {
     justify-content: center;
   }
 }

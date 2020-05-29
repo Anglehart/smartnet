@@ -19,5 +19,14 @@ function initFunction() {
     })
   });
 
+  document.querySelectorAll('.connectBlock h3').forEach((item, i) => {
+    item.addEventListener('click', () => {
+      document.querySelectorAll('.connectBlock').forEach((item) => {item.classList.remove('fullConnect')})
+      document.querySelectorAll('.connectBlock h3').forEach((item) => {item.classList.remove('openTab')})
+      event.currentTarget.parentNode.classList.add('fullConnect');
+      event.currentTarget.classList.add('openTab');
+    })
+  });
+
 
 }
