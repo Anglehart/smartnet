@@ -35,7 +35,7 @@ h1 {
   color: #fff;
 }
 .disable {
-  display: none;
+  display: none !important;
 }
 #aboutSmartPage .text {
   display: flex;
@@ -333,9 +333,59 @@ h1 {
   overflow: hidden;
 }
 
+#instructionsPage {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.instruction {
+  width: 238px;
+  height: 175px;
+  display: block;
+  margin: 20px 10px;
+}
+.zeno {background: url(./assets/instructions/1.png)}
+.zeno:hover {background: url(./assets/instructions/1_1.png)}
+.captivate {background: url(./assets/instructions/2.png)}
+.captivate:hover {background: url(./assets/instructions/2_2.png)}
+.smartwox {background: url(./assets/instructions/3.png)}
+.smartwox:hover {background: url(./assets/instructions/3_3.png)}
+.trimble {background: url(./assets/instructions/4.png)}
+.trimble:hover {background: url(./assets/instructions/4_4.png)}
+
+.stonex {background: url(./assets/instructions/5.png)}
+.stonex:hover {background: url(./assets/instructions/5_5.png)}
+.tracy {background: url(./assets/instructions/6.png)}
+.tracy:hover {background: url(./assets/instructions/6_6.png)}
+.spectra {background: url(./assets/instructions/7.png)}
+.spectra:hover {background: url(./assets/instructions/7_7.png)}
+.south {background: url(./assets/instructions/8.png)}
+.south:hover {background: url(./assets/instructions/8_8.png)}
+
+.landstar6 {background: url(./assets/instructions/9.png)}
+.landstar6:hover {background: url(./assets/instructions/9_9.png)}
+.landstar7 {background: url(./assets/instructions/10.png)}
+.landstar7:hover {background: url(./assets/instructions/10_10.png)}
+.topsurv {background: url(./assets/instructions/11.png)}
+.topsurv:hover {background: url(./assets/instructions/11_11.png)}
+.topcon {background: url(./assets/instructions/12.png)}
+.topcon:hover {background: url(./assets/instructions/12_12.png)}
+
+.eft {background: url(./assets/instructions/13.png)}
+.eft:hover {background: url(./assets/instructions/13_13.png)}
+.acnovo {background: url(./assets/instructions/14.png)}
+.acnovo:hover {background: url(./assets/instructions/14_14.png)}
+.altus {background: url(./assets/instructions/15.png)}
+.altus:hover {background: url(./assets/instructions/15_15.png)}
+.rinex {background: url(./assets/instructions/16.png)}
+.rinex:hover {background: url(./assets/instructions/16_16.png)}
+
 @media (max-width: 1140px) {
   .arrow {
     display: none;
+  }
+  #instructionsPage {
+    justify-content: space-around;
   }
 }
 
